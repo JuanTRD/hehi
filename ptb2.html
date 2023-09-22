@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=+prompt("Enter a:");
+  let b=+prompt("Enter b:");
+  let c=+prompt("Enter c:");
+  if(a==0){
+    if(b==0){
+      if(c==0){
+        alert("PT vo so nghiem");
+      } else alert("PT vo nghiem");
+    }
+  } else {
+    let d=b*b-4*a*c;
+    if(d==0){
+        alert("PT co nghiem kep:" + -b/(2*a));
+    } else {
+      if(d<0){
+          alert("PT khong co nghiem");
+      } else {
+          let x1=(-b + Math.sqrt(d))/(2*a);
+          let x2=(-b - Math.sqrt(d))/(2*a);
+          alert("PT co 2 nghiem phan biet la x1= " + x1 + " và x2= " + x2 );
+    }
+  }
+  }
+</script>
+</body>
+</html>

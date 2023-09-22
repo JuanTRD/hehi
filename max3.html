@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=+prompt("Enter a:");
+    let b=+prompt("Enter b:");
+    let c=+prompt("Enter c:");
+    /* if (a>b){
+        if (b>c){
+            alert("Max = a = "+a);
+        } else {
+            if (c>a){
+                alert("Max = c ="+c);
+            }
+        }
+    } else {
+        if (a>c){
+            alert("Max = b = "+b);
+        } else {
+            if (c>b){
+                alert("Max = c ="+c);
+            } else alert("Max = b =" +b)
+        }
+    }
+    */
+    if (a>b && a>c){
+        alert("Max = a = "+a);
+    } else {
+        if (b>a && b>c){
+            alert("Max = b = "+b);
+        } else alert("Max c = "+c);
+    }
+    /* let y = x>5? ++x : --x
+    nghĩa là nếu x>5 thì y=++x còn không thì y=--x
+     */
+</script>
+</body>
+</html>
